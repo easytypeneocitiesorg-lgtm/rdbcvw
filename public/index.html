@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Remote Firefox Control</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-bar">
+    <input id="token-input" type="password" placeholder="Access token" />
+    <button id="save-token">Connect</button>
+    <span id="status">disconnected</span>
+  </div>
+
+  <div id="toolbar">
+    <button id="back-btn" title="Back">&larr;</button>
+    <button id="refresh-btn" title="Refresh">&#8635;</button>
+    <input id="url-input" type="text" placeholder="https://example.com" />
+    <button id="go-btn">Go</button>
+  </div>
+
+  <div id="screen-wrap">
+    <img id="screen" alt="Waiting for the remote browser..." />
+    <textarea id="key-capture" autocomplete="off" spellcheck="false"
+      placeholder="Click the screen, then type here"></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
